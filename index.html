@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>whatsapp-google-sync</title>
+  <style>
+    :root { --bg: #fafaf8; --fg: #1d1d1b; --muted: #5f5f5a; --line: #e2e2dc; --accent: #1a7f5a; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #161615; --fg: #ececea; --muted: #a3a39e; --line: #2e2e2b; --accent: #4cc493; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg);
+           font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 56px 20px 72px; }
+    h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.01em; }
+    .lede { color: var(--muted); margin: 0 0 40px; }
+    h2 { font-size: 1.05rem; margin: 36px 0 8px; }
+    ul { padding-left: 1.2em; margin: 0; }
+    li { margin: 4px 0; }
+    a { color: var(--accent); }
+    footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line);
+             color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>whatsapp-google-sync</h1>
+    <p class="lede">Un script personnel qui reprend les photos de profil WhatsApp de mes contacts
+      pour les appliquer à mes propres contacts Google.</p>
+
+    <h2>À quoi sert-il</h2>
+    <p>Le script compare mes contacts Google à leurs comptes WhatsApp, à partir des numéros de téléphone.
+      Quand un contact a une photo de profil WhatsApp, il l'ajoute à sa fiche dans mon carnet d'adresses Google.</p>
+
+    <h2>Qui l'utilise</h2>
+    <p>Uniquement moi, sur mon propre ordinateur. Il ne s'agit pas d'un service public :
+      aucune inscription n'est possible et aucun serveur n'est exploité.</p>
+
+    <h2>Accès demandés</h2>
+    <ul>
+      <li><strong>Google Contacts</strong> : lecture des contacts et de leurs numéros, et modification de la photo des fiches.</li>
+      <li><strong>WhatsApp</strong> : lecture des photos de profil visibles depuis mon compte.</li>
+    </ul>
+
+    <footer>
+      <a href="privacy.html">Politique de confidentialité</a>
+    </footer>
+  </main>
+</body>
+</html>
